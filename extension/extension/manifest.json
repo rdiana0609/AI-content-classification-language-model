@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Text Categorization Plugin",
+    "version": "1.0",
+    "description": "Highlight text and add warnings based on categories.",
+    "permissions": [
+      "activeTab",
+      "http://127.0.0.1:5000/"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["style.css"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  

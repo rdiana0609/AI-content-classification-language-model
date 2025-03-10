@@ -1,0 +1,9 @@
+.warning {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.highlighted {
+    color: red;
+    font-weight: bold;
+}
